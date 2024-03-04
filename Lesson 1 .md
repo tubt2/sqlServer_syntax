@@ -2,14 +2,14 @@
 
 ## Datatype
 Các kiểu dữ liệu thường gặp trong SQL server được chia thành 3 nhóm chính:
-1. String: varchar(10), nvarchar(10), char(10), nchar(10), text
-2. Number: integer, float, decimal(18,0), numeric(18,0)
-4. Date: date, datetime, datetime2
+1. String: varchar(10), nvarchar(10), char(10), nchar(10), text...
+2. Number: integer, float, decimal(18,0), numeric(18,0) ...
+4. Date: date, datetime, datetime2 ...
 
 | Data type      | Sample value |
 | ----------- | ----------- |
 | Sring      | a,b, sql server       |
-| Number   | 1,2, 2.908990        |
+| Number   | 1,2,-1,-10, 2.908990        |
 |Date| 2024-03-05, 2024-03-04 20:58:40.233, 2024-03-04 20:58:40.233786
 
 ## Create, drop, use database
@@ -86,7 +86,7 @@ cách 1: sử dụng ít nhất 2 dấu `--`
 -- đây là comment
 
 ```
-cách 2: sử dụng `/* */
+cách 2: sử dụng `/* */`
 ```sql
 
 /* đây là comment */
