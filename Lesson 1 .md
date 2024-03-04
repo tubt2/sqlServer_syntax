@@ -26,9 +26,9 @@ ON  primary
 LOG ON  
 ( NAME = TRAINING_MCI_LOG,  
   FILENAME = 'D:\Database\TRAINING_MCI_LOG.ldf', -- Đường dẫn chưa file .ldf
-    SIZE = 5MB,  
-    MAXSIZE = 25MB,  
-    FILEGROWTH = 5MB 
+    SIZE = 5,  
+    MAXSIZE = 25,  
+    FILEGROWTH = 5 
 )
 ;
 
@@ -38,6 +38,8 @@ LOG ON
 USE <DB_NAME>;  -- sử dụng database
 
 DROP <DB_NAME>; --xóa database
+
+ALTER <DB_NAME>; -- sửa database
 ```
 ## Table
 ```sql
@@ -78,7 +80,7 @@ FROM <db_name>.<schema_name>.<table_name>
 
 ```
 
-## Comment trong Sql Server
+## Comment
 Trong SQL Server khi cần comment có thể sử dụng 1 trong 2 cách sau. Lưu ý khi sql thực thi code sẽ không thực thi các comment này. Nên sử dụng comment để note lại code đang muốn làm gi, ngày sửa, add rule code...
 
 cách 1: sử dụng ít nhất 2 dấu `--`
