@@ -14,21 +14,20 @@ Các kiểu dữ liệu thường gặp trong SQL server được chia thành 3 
 
 ## Create, drop, use database
 ```sql
-CREATE DATABASE <DATABASE_NAME>;
-
-ON  primary 
-( NAME = TRAINING_MCI,  
-  FILENAME = 'D:\Database\TRAINING_MCI.mdf',--Đường dẫn chưa file .mdf
-    SIZE = 10,  
-    MAXSIZE = 50,  
- FILEGROWTH = 5 
+CREATE DATABASE MCIDB 
+ON  PRIMARY 
+( NAME = MCIDB,  
+  FILENAME = 'D:\data\MCIDB.mdf',--đường dẫn chứa file  .mdf
+    SIZE = 10,  --size ban đầu
+    MAXSIZE = 50000,  --sizing tối đa cấp cho file
+	FILEGROWTH = 50 --số tăng lên khi file đầy
  )  
 LOG ON  
-( NAME = TRAINING_MCI_LOG,  
-  FILENAME = 'D:\Database\TRAINING_MCI_LOG.ldf', -- Đường dẫn chưa file .ldf
-    SIZE = 5,  
-    MAXSIZE = 25,  
-    FILEGROWTH = 5 
+( NAME = MCIDB_log,  
+  FILENAME = 'D:\data\MCIDB_log.ldf', -- đường dẫn chứa file .ldf
+    SIZE = 50,  
+    MAXSIZE = 50000,  
+    FILEGROWTH = 50 
 )
 ;
 
@@ -37,9 +36,9 @@ LOG ON
 
 USE <DB_NAME>;  -- sử dụng database
 
-DROP <DB_NAME>; --xóa database
+DROP DATABASE <DB_NAME>; --xóa database
 
-ALTER <DB_NAME>; -- sửa database
+ALTER DATABASE <DB_NAME>; -- sửa database
 ```
 ## Table
 ```sql
@@ -63,7 +62,7 @@ DROP TABLE [IF EXISTS] <table_name>;
 Trong sql khi cần truy vấn (get data) từ 1 bảng trong database, sử dụng mệnh đề `SELECT`
 
 ```sql
-SELECT <list column>
+SELECT [list column]
 FROM <db_name>.<schema_name>.<table_name>
 ;
 
