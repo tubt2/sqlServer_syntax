@@ -11,10 +11,10 @@
     Thông thường, GROUP BY được sử dụng để tính tổng theo điều kiện, đếm bản ghi thỏa mãn điều kiện nào đó hoặc tìm dữ liệu sum, min, max..
     */
 
-    SELECT [list_column], agg()
-    FROM <db_name>.<schema_name>.<table_name>
-    WHERE ...
-    GROUP BY [list_column]
+SELECT [list_column], agg()
+FROM <db_name>.<schema_name>.<table_name>
+WHERE ...
+GROUP BY [list_column]
 
 ```
 
@@ -25,11 +25,11 @@
 
     Cả where và having đều cho phép lọc bản ghi. Tuy nhiên, sự khác biệt giữa having và where nằm ở thứ tự thực thi trong câu lệnh khi lấy group by làm mốc. Where cho lọc bản ghi trước truy vấn còn having là lọc sau truy vấn
 */
-    SELECT [list_column], agg()
-    FROM <db_name>.<schema_name>.<table_name>
-    WHERE ...
-    GROUP BY [list_column]
-    HAVING agg()...
+SELECT [list_column], agg()
+FROM <db_name>.<schema_name>.<table_name>
+WHERE ...
+GROUP BY [list_column]
+HAVING agg()...
 
 
 ```
