@@ -22,8 +22,9 @@ GROUP BY [list_column]
 ```sql
 /*
     Mệnh đề Having kết hợp với group by cho phép lọc điều kiện sau kết quả truy vấn	nếu điều kiện đó là True.
-
-    Cả where và having đều cho phép lọc bản ghi. Tuy nhiên, sự khác biệt giữa having và where nằm ở thứ tự thực thi trong câu lệnh khi lấy group by làm mốc. Where cho lọc bản ghi trước truy vấn còn having là lọc sau truy vấn
+    
+    Cả where và having đều cho phép lọc bản ghi. Tuy nhiên, sự khác biệt giữa having và where nằm ở thứ tự thực thi trong câu lệnh khi lấy group by làm mốc. 
+    Where cho lọc bản ghi trước truy vấn còn having là lọc sau truy vấn
 */
 SELECT [list_column], agg()
 FROM <db_name>.<schema_name>.<table_name>
