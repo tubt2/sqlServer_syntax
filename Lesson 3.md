@@ -37,7 +37,7 @@ HAVING agg()...
 
 ## Union, Except, Intersect
 
-<img src="./assets/union_except_intersect.png" alt="image" width="85%" height="auto">
+<img src="./assets/union_except_intersect.png" alt="image" width="70%" height="auto">
 
 ```sql
 -- Union/ union all
