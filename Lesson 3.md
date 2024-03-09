@@ -34,3 +34,46 @@ HAVING agg()...
 
 
 ```
+
+## Union, Except, Intersect
+
+<img src="./assets/union_except_intersect.png" alt="image" width="85%" height="auto">
+
+```sql
+-- Union/ union all
+SELECT column1, column2
+FROM table1
+UNION/ UNION ALL
+SELECT column1, column2
+FROM table2
+
+-- Except
+SELECT column1, column2
+FROM table1
+EXCEPT
+SELECT column1, column2
+FROM table2
+
+-- Intersect
+SELECT column1, column2
+FROM table1
+INTERSECT
+SELECT column1, column2
+FROM table2
+
+```
+
+## Case When
+
+```sql
+-- Case When
+SELECT column1, column2,
+    CASE
+        WHEN condition1 THEN result1
+        WHEN condition2 THEN result2
+        ELSE result3
+    END AS new_column
+FROM table_name
+WHERE ...
+
+```
