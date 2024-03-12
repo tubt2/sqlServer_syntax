@@ -148,5 +148,16 @@ WHERE ...
 
 
 ```
+## Alias
+
+Trong Sql alias có tác dụng đặt lại tên cho 1 cột, 1 bảng trong câu lệnh
+
+```sql
+-- Alias
+SELECT column_name AS alias_name
+FROM table_name AS alias_table
+WHERE ...
+
+```
 
 [Link Documents](https://www.w3schools.com/sql/func_sqlserver_convert.asp)
