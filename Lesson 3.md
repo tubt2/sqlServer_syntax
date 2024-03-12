@@ -148,3 +148,5 @@ WHERE ...
 
 
 ```
+
+[Link Documents](https://www.w3schools.com/sql/func_sqlserver_convert.asp)
