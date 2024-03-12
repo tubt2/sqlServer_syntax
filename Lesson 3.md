@@ -77,3 +77,74 @@ FROM table_name
 WHERE ...
 
 ```
+
+## Function
+```sql
+
+/* String */
+
+SELECT LEFT(column_name, length) --- cắt chuỗi từ trái sang
+FROM table_name
+WHERE ...
+
+-- Right
+SELECT RIGHT(column_name, length) --- cắt chuỗi từ phải sang
+FROM table_name
+WHERE ...
+
+-- Substring
+SELECT SUBSTRING(column_name, start_position, length) --- cắt chuỗi từ vị trí start_position với độ dài length
+FROM table_name
+WHERE ...
+
+-- Len
+SELECT LEN(column_name) --- trả về độ dài của chuỗi
+FROM table_name
+WHERE ...
+
+-- Concatenation
+SELECT CONCAT(column1, column2) AS concatenated_column -- nối nhiều chuỗi thành 1 chuỗi
+FROM table_name
+WHERE ...
+
+-- Charindex
+SELECT CHARINDEX('search_string', column_name) AS position -- tìm vị trí của chuỗi bé trong chuỗi lớn
+FROM table_name
+WHERE ...
+
+-- CONCAT_WS
+SELECT CONCAT_WS(',', column1, column2, column3) AS concatenated_column -- nối các chuỗi với dấu phẩy làm dấu phân cách
+FROM table_name
+WHERE ...
+
+/* Date/ datetime*/
+-- Get current date and time
+SELECT GETDATE() AS current_datetime
+FROM table_name
+WHERE ...
+
+-- Year
+SELECT YEAR(column_name) AS year
+FROM table_name
+WHERE ...
+
+-- Month
+SELECT MONTH(column_name) AS month
+FROM table_name
+WHERE ...
+
+```
+## Cast, Convert
+```sql
+-- Cast
+SELECT CAST(column_name AS data_type) AS new_column -- biến đổi kiểu dữ liệu mới
+FROM table_name
+WHERE ...
+
+-- Convert
+SELECT CONVERT(data_type, column_name) AS new_column -- chuyển đổi kiểu dữ liệu
+FROM table_name
+WHERE ...
+
+
+```
