@@ -61,6 +61,9 @@ INTERSECT
 SELECT column1, column2
 FROM table2
 
+Note: muốn sử dụng được 4 mệnh đề trên:
+1. các câu lệnh phải đồng nhất với nhau về số lượng cột trả về và kiểu dữ liệu
+2. tên hiển thị luôn là tên của câu truy vấn số 1
 ```
 
 ## Case When
