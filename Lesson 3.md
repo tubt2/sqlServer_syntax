@@ -90,10 +90,10 @@ Note:
         end
     end
 4. ELSE trong case when có thể có hoặc không
+```
 
 [link](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/case-transact-sql?view=sql-server-ver16)
 
-```
 
 ## Function
 ```sql
