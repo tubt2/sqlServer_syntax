@@ -76,6 +76,18 @@ SELECT column1, column2,
 FROM table_name
 WHERE ...
 
+Note:
+1. Giá trị sau THEN phải đồng nhất với nhau về kiểu dữ liệu
+2. case when ưu tiên xử lý từ trên xuống dưới, 1 bản ghi khi duyệt qua case when chỉ nằm trong 1 nhóm và ưu tiên xử lý vào when được khai báo trước
+3. có thể sử dụng case when lồng nhau nhiều lần:
+    case
+    when condition1 then 
+        case
+        when condition2 then...
+        end
+    end
+4. ELSE trong case when có thể có hoặc không
+
 ```
 
 ## Function
