@@ -171,6 +171,7 @@ SELECT DATEADD(interval, number, datetime)
 SELECT DATEDIFF(day, start_date, end_date) AS date_difference
 FROM your_table;
 
+
 --- round:" làm tròn số
 
 SELECT ROUND (column_name,3)
@@ -188,6 +189,7 @@ FROM table_name
 Where...;
 
 ```
+[Datetime fuction docs](https://www.w3schools.com/sql/func_sqlserver_datepart.asp)
 
 ## Cast, Convert
 ```sql
