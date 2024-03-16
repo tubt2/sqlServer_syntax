@@ -145,6 +145,23 @@ SELECT MONTH(column_name) AS month
 FROM table_name
 WHERE ...
 
+--- round:" làm tròn số
+
+SELECT ROUND (column_name,3)
+FROM table_name
+Where...;
+
+--ceiling: lấy mức trần của 1 số
+SELECT CEILING (column_name)
+FROM table_name
+Where...;
+
+--floor: lấy mức sàn của 1 số
+SELECT FLOOR (column_name)
+FROM table_name
+Where...;
+
+
 ```
 ## Cast, Convert
 ```sql
