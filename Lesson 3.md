@@ -150,6 +150,27 @@ SELECT MONTH(column_name) AS month
 FROM table_name
 WHERE ...
 
+--datepart: láy ra các cấu phần của 1 thời điểm
+
+SELECT DATEPART(year, GETDATE()) AS Year,
+    DATEPART(month, GETDATE()) AS Month,
+    DATEPART(day, GETDATE()) AS Day
+
+-- datename
+SELECT DATENAME(year, GETDATE()) AS Year,
+    DATENAME(month, GETDATE()) AS Month,
+    DATENAME(day, GETDATE()) AS Day
+
+--dateadd: cộng số học vào 1 thời điểm thời gian, lưu ý có thể cộng cả số âm
+
+SELECT DATEADD(interval, number, datetime)
+
+
+--datediff: khoảng cách giữa 2 thời điểm, luôn luôn là biến số 3 trừ biến số 2
+
+SELECT DATEDIFF(day, start_date, end_date) AS date_difference
+FROM your_table;
+
 --- round:" làm tròn số
 
 SELECT ROUND (column_name,3)
@@ -166,8 +187,8 @@ SELECT FLOOR (column_name)
 FROM table_name
 Where...;
 
-
 ```
+
 ## Cast, Convert
 ```sql
 -- Cast
