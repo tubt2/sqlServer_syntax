@@ -60,10 +60,10 @@ SELECT Column1, Column2
 FROM AnotherTable
 WHERE Condition;
 
-
-/* Delete: xóa bản ghi (có điều kiện) từ 1 bảng */
--- Delete records from a table
-DELETE FROM YourTable
+-- Select into a new table
+SELECT Column1, Column2
+INTO NewTable
+FROM YourTable
 WHERE Condition;
 
 -- Delete records from multiple tables using JOIN
