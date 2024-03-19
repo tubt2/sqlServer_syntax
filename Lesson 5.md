@@ -24,6 +24,10 @@ SELECT *,
     MAX(column_name) OVER (PARTITION BY partition_column ORDER BY order_column) AS max_partition
 FROM table_name;
 
+current row: dòng hiện tại
+preceding: các dòng bên trên của dòng hiện tại
+following: các dòng bên dưới của dòng hiện tại
+
 ```
 [Link Window function](https://datapot.vn/windows-functions-trong-sql-va-ung-dung-cua-no/)
 
