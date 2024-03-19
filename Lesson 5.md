@@ -24,6 +24,12 @@ SELECT *,
     MAX(column_name) OVER (PARTITION BY partition_column ORDER BY order_column) AS max_partition
 FROM table_name;
 
+select
+	sum(lcy_amt) over(partition by storedid, trans_date order by sale_id desc
+			rows between 2 preceding and current row) as over_sum
+	,*
+from test_sql.dbo.;
+
 current row: dòng hiện tại
 preceding: các dòng bên trên của dòng hiện tại
 following: các dòng bên dưới của dòng hiện tại
