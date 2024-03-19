@@ -28,7 +28,7 @@ select
 	sum(lcy_amt) over(partition by storedid, trans_date order by sale_id desc
 			rows between 2 preceding and current row) as over_sum
 	,*
-from test_sql.dbo.;
+from test_sql.dbo.banhang;
 
 current row: dòng hiện tại
 preceding: các dòng bên trên của dòng hiện tại
