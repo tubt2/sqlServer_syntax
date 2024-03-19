@@ -25,6 +25,7 @@ SELECT *,
 FROM table_name;
 
 ```
+[Link Window function](https://datapot.vn/windows-functions-trong-sql-va-ung-dung-cua-no/)
 
 ## Join Statement
 
