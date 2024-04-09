@@ -1,5 +1,6 @@
 # Lesson 7
 
+![if else](./assets/if%20else.drawio.png)
 ## IF else
 
 ```sql
@@ -35,6 +36,13 @@ DECLARE @myVar varchar(8) = 'store 1'
 SELECT *
 FROM <Table>
 WHERE COL = @myVar
+
+
+```
+
+## Loop
+
+```sql
 
 
 ```
