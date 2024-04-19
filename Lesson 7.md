@@ -7,6 +7,7 @@
 
 
 ```sql
+-- câu điều kiện chia nhánh if else
 IF 1=1
     BEGIN
         print('pass')
@@ -20,6 +21,7 @@ ELSE
 ```
 ## Dynamic code
 ```sql
+-- khai báo biến trong sql server
 DECLARE @myVariable INT;
 SET @myVariable = 10;
 
@@ -48,6 +50,7 @@ WHERE COL = @myVar
 ![if else](./assets/loop.png)
 
 ```sql
+-- vòng lặp (loop) trong sql server
 
 drop table if exists #a;
 create table #a
