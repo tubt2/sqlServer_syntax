@@ -8,7 +8,7 @@ Các kiểu dữ liệu thường gặp trong SQL server được chia thành 3 
 
 | Data type      | Sample value |
 | ----------- | ----------- |
-| Sring      | a,b, sql server       |
+| String      | a,b, sql server       |
 | Number   | 1,2,-1,-10, 2.908990        |
 |Date| 2024-03-05, 2024-03-04 20:58:40.233, 2024-03-04 20:58:40.233786
 

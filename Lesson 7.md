@@ -89,6 +89,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE function dbo.fn_max_value(@store varchar(10))
+
 returns  float
 as
 
