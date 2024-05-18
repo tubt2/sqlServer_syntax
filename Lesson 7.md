@@ -125,4 +125,36 @@ begin
 end
 ;
 
+-- run procedure
+
+exec dbo.usp_first_procedure;
+
+-- xóa procedure
+
+drop procedure  dbo.usp_first_procedure;
+
+drop procedure if exists dbo.usp_first_procedure;
+
+-- sửa procedure: sử dụng alter
+
+alter procedure dbo.usp_fisrt_procedure -- tạo thủ tục
+as
+begin
+
+	-- new code:
+	select getdate();
+
+	print 'start code';
+	select top 100 * 
+	from  mcidb..CUSTOMER;
+
+	select top 100 * 
+	from mcidb..BANHANG
+	where STOREDID = 'store 2'
+	;
+
+	print('end code');
+
+end
+
 ```
