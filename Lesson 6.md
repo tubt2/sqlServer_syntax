@@ -60,4 +60,14 @@ SELECT *
 FROM TABLE
 WHERE 1=1 AND CONDITION
 
+-- SỬA VIEW
+ALTER VIEW DBO.VW_DEMO
+AS
+SELECT *
+FROM TABLE
+WHERE CONDITION;
+
+-- DROP VIEW
+    drop view  if exists dbo.vw_demo;
+
 ```
